@@ -3,6 +3,7 @@
 
 
 from random import randint
+import os
 
 opcao = 0
 tabuadaRandom = int(randint(1, 100))
@@ -14,6 +15,7 @@ n2 = 1
 pontuacao = 0
 sair = 0
 while opcao != 9 :
+    os.system('cls' if os.name == 'nt' else 'clear')
     print("#######################################################################")
     print("###                                     #####           ####        ###")
     print("###                                      ####          ####         ###")
@@ -30,7 +32,7 @@ while opcao != 9 :
     print("###  Desenvolvido por Ruan Araújo       ####            ####        ###")
     print("#######################################################################")
     print(
-        "###      Opções de estudo: \n###      1. Tabuadas aleatórias \n###      2.Tabuada pré-definida(Com números aleatórios)\n###      3.Tabuada pré-definida(Em sequência 1 ao 10)"
+        "###      Opções de estudo: \n###      1. Multiplicações aleatórias \n###      2.Tabuada pré-definida(Com números aleatórios)\n###      3.Tabuada pré-definida(Em sequência 1 ao 10)"
         "\n###      5.Informações\n###      9.Sair")
     opcao = 0
     opcao = int(input("###      Digite: "))
